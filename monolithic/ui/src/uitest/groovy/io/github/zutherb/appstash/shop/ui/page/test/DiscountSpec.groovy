@@ -13,6 +13,7 @@ class DiscountSpec extends GebReportingSpec {
         assert discountHeader.text() == "Save!"
         assert discountPercent.text() == Config.getProperty("GLOBAL_DISCOUNT")
         assert discountLabel.text() ==  "You save"
+        
 
         and:
         homeLink.click()
